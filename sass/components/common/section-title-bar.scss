@@ -1,0 +1,50 @@
+// Section Title Bar Component
+// Source: https://tailwindcomponents.com/component/testimonials-block
+
+.section-title-bar-container {
+    @apply max-w-6xl mx-auto w-full;
+
+    .title-bar {
+        @apply max-w-xl mx-auto text-center;
+
+        .title {
+            @apply font-bold mb-5 md:text-5xl text-6xl text-gray-700;
+        }
+
+        .short-message {
+            @apply font-light mb-5 text-xl;
+        }
+
+        .underline {
+            @apply mb-10 text-center;
+
+            &.line-orange {
+                .line {
+                    @apply bg-orange-400;
+                }
+            }
+
+            .line {
+                &.line-1 {
+                    @apply h-1 inline-block ml-1 rounded-full w-1;
+                }
+
+                &.line-2 {
+                    @apply h-1 inline-block ml-1 rounded-full w-3;
+                }
+
+                &.line-3 {
+                    @apply h-1 inline-block rounded-full w-40;
+                }
+
+                &.line-4 {
+                    @apply h-1 inline-block ml-1 rounded-full w-3;
+                }
+
+                &.line-5 {
+                    @apply h-1 inline-block ml-1 rounded-full w-1;
+                }
+            }
+        }
+    }
+}
