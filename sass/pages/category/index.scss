@@ -1,0 +1,13 @@
+@import "./../../components/category/category-cards.scss";
+
+.category-collection {
+    @apply flex flex-wrap items-center justify-center my-12;
+
+    .card-item {
+        width: 300px;
+
+        @apply m-5;
+
+        @extend .card-item-default;
+    }
+}
