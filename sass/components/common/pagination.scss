@@ -1,0 +1,103 @@
+.pagination-nav {
+    @apply flex items-center justify-between;
+
+    .next-prev-container {
+        @apply flex flex-1 justify-between sm:hidden;
+
+        span {
+            @apply bg-gray-100 border border-gray-300 cursor-default font-medium inline-flex items-center leading-5 px-4 py-2 relative rounded-md text-gray-500 text-sm;
+        }
+
+        a {
+            @apply active:bg-gray-100 active:text-gray-700 bg-white border border-gray-300 duration-150 ease-in-out focus:border-blue-300 focus:outline-none focus:ring font-medium hover:text-gray-500 inline-flex items-center leading-5 px-4 py-2 relative ring-gray-300 rounded-md text-gray-700 text-sm transition;
+        }
+
+        a {
+            @apply active:bg-gray-100 active:text-gray-700 bg-white border border-gray-300 duration-150 ease-in-out focus:border-blue-300 focus:outline-none focus:ring font-medium hover:text-gray-500 inline-flex items-center leading-5 ml-3 px-4 py-2 relative ring-gray-300 rounded-md text-gray-700 text-sm transition;
+        }
+
+        span {
+            @apply bg-gray-100 border border-gray-300 cursor-default font-medium inline-flex items-center leading-5 ml-3 px-4 py-2 relative rounded-md text-gray-500 text-sm;
+        }
+    }
+
+    .pagination-container {
+        @apply hidden sm:flex sm:flex-1 sm:items-center sm:justify-between;
+
+        .counter-container {
+            .showing-from-to {
+                @apply leading-5 text-gray-700 text-sm mr-3;
+
+                span {
+                    @apply font-medium;
+                }
+
+                span {
+                    @apply font-medium;
+                }
+
+                span {
+                    @apply font-medium;
+                }
+            }
+        }
+
+        .number-wrapper {
+            .number-container {
+                @apply inline-flex relative rounded-md shadow-sm z-0;
+
+                .class-span-7 {
+                    .previous-page-content {
+                        @apply bg-gray-100 border border-gray-300 cursor-default font-medium inline-flex items-center leading-5 px-2 py-2 relative rounded-l-md text-gray-500 text-sm;
+
+                        svg {
+                            @apply h-5 w-5;
+                        }
+                    }
+                }
+
+                .previous-page-link {
+                    @apply active:bg-gray-100 active:text-gray-500 bg-white border border-gray-300 duration-150 ease-in-out focus:border-blue-300 focus:outline-none focus:ring focus:z-10 font-medium hover:text-gray-400 inline-flex items-center leading-5 px-2 py-2 relative ring-gray-300 rounded-l-md text-gray-500 text-sm transition;
+
+                    svg {
+                        @apply h-5 w-5;
+                    }
+                }
+
+                .class-span-9 {
+                    .three-dots-separator {
+                        @apply -ml-px bg-white border border-gray-300 cursor-default font-medium inline-flex items-center leading-5 px-4 py-2 relative text-gray-700 text-sm;
+                    }
+                }
+
+                .class-span-10 {
+                    .current-page {
+                        @apply -ml-px bg-white border border-gray-300 cursor-default font-medium inline-flex items-center leading-5 px-4 py-2 relative text-gray-500 text-sm;
+                    }
+                }
+
+                .link {
+                    @apply -ml-px active:bg-gray-100 active:text-gray-700 bg-white border border-gray-300 duration-150 ease-in-out focus:border-blue-300 focus:outline-none focus:ring focus:z-10 font-medium hover:text-gray-500 inline-flex items-center leading-5 px-4 py-2 relative ring-gray-300 text-gray-700 text-sm transition;
+                }
+
+                .next-page-link {
+                    @apply -ml-px active:bg-gray-100 active:text-gray-500 bg-white border border-gray-300 duration-150 ease-in-out focus:border-blue-300 focus:outline-none focus:ring focus:z-10 font-medium hover:text-gray-400 inline-flex items-center leading-5 px-2 py-2 relative ring-gray-300 rounded-r-md text-gray-500 text-sm transition;
+
+                    svg {
+                        @apply h-5 w-5;
+                    }
+                }
+
+                .class-span-13 {
+                    .next-page-content {
+                        @apply -ml-px bg-gray-100 border border-gray-300 cursor-default font-medium inline-flex items-center leading-5 px-2 py-2 relative rounded-r-md text-gray-500 text-sm;
+
+                        svg {
+                            @apply h-5 w-5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
