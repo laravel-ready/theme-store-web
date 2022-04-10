@@ -3,6 +3,10 @@
 
     img {
         @apply h-20 w-20 object-cover mx-auto rounded-full;
+
+        &:hover {
+            @apply scale-105 transition-transform duration-300 delay-75;
+        }
     }
 
     p {
