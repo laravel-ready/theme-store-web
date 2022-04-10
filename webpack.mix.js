@@ -7,7 +7,7 @@ const path = require("path");
 
 const publicWebAssetsFolder = "public";
 
-mix.sass(`./sass/store.scss`, `${publicWebAssetsFolder}/css/store.min.css`);
+mix.sass(`./sass/landing.scss`, `${publicWebAssetsFolder}/css/landing.min.css`);
 mix
   .sass(`./sass/error.scss`, `${publicWebAssetsFolder}/css/error.min.css`)
   .options({
