@@ -5,7 +5,7 @@ footer {
     @apply w-full bg-white;
 
     .footer-content {
-        @apply bg-white max-w-screen-xl px-4 py-12 mx-auto space-y-8
+        @apply max-w-screen-xl px-4 py-12 mx-auto space-y-8
             overflow-hidden sm:px-6 lg:px-8 lg:pt-32;
 
         .nav-links {
@@ -36,6 +36,24 @@ footer {
 
         .copyright {
             @apply mt-8 text-base leading-6 text-center text-gray-400;
+        }
+    }
+
+    &.dark {
+        @apply bg-gray-900;
+
+        .nav-links {
+            a {
+                @apply text-gray-200 hover:text-orange-300
+                    transition duration-200 ease-in-out;
+            }
+        }
+
+        .social-links {
+            a {
+                @apply text-gray-200 hover:text-gray-400
+                    transition duration-100 ease-in-out;
+            }
         }
     }
 }
