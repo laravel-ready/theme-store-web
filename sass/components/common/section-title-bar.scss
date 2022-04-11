@@ -25,6 +25,8 @@
             }
 
             .line {
+                @apply bg-gray-500;
+
                 &.line-1 {
                     @apply h-1 inline-block ml-1 rounded-full w-1;
                 }
