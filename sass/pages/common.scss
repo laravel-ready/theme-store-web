@@ -1,8 +1,9 @@
 @import "./../components/common/navbar.scss";
-@import "./../components/common/hero.scss";
 @import "./../components/common/search-bar.scss";
 @import "./../components/common/footer.scss";
 @import "./../components/common/pagination.scss";
+@import "./../components/common/page-hero.scss";
+@import "./../components/common/section-title-bar.scss";
 
 body {
     @apply bg-gray-50;
