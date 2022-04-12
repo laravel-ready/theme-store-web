@@ -1,3 +1,5 @@
+// Source: https://tailwindcomponents.com/component/javascript-components
+
 .categories-preview {
     @apply flex flex-wrap items-center py-16;
 
@@ -24,6 +26,14 @@
             img {
                 @apply scale-105 transition-transform duration-300 delay-75;
             }
+
+            &.border-orange {
+                @apply border border-orange-200/70;
+            }
+        }
+
+        &.border-orange {
+            @apply border border-orange-100;
         }
     }
 

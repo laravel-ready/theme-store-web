@@ -1,5 +1,5 @@
 .pagination-nav {
-    @apply flex items-center justify-between;
+    @apply flex items-center justify-between mt-20;
 
     .next-prev-container {
         @apply flex flex-1 justify-between sm:hidden;

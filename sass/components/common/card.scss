@@ -1,0 +1,10 @@
+section {
+    &.card {
+        @apply bg-white shadow-lg rounded-2xl overflow-hidden
+            p-5;
+    }
+
+    &.place-to-top {
+        @apply -mt-36;
+    }
+}
