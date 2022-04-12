@@ -10,3 +10,7 @@
 .gradient-text {
     @apply text-transparent bg-clip-text bg-gradient-to-tl from-orange-600 to-yellow-200;
 }
+
+.p-0 {
+    padding: 0px !important;
+}
