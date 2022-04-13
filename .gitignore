@@ -12,3 +12,4 @@ vendor/
 mix-manifest.json
 
 public/
+.vscode/settings.json
