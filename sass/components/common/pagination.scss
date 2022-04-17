@@ -105,9 +105,9 @@
 
                 .next-page-link {
                     @apply -ml-px active:bg-gray-100 active:text-gray-500 bg-white border
-                    border-gray-300 duration-150 ease-in-out focus:border-blue-300 focus:outline-none
-                    focus:ring focus:z-10 font-medium hover:text-gray-400 inline-flex items-center
-                    leading-5 px-2 py-2 relative ring-gray-300 rounded-r-md text-gray-500 text-sm transition;
+                        border-gray-300 duration-150 ease-in-out focus:border-blue-300 focus:outline-none
+                        focus:ring focus:z-10 font-medium hover:text-gray-400 inline-flex items-center
+                        leading-5 px-2 py-2 relative ring-gray-300 rounded-r-md text-gray-500 text-sm transition;
 
                     svg {
                         @apply h-5 w-5;
@@ -117,7 +117,7 @@
                 .class-span-13 {
                     .next-page-content {
                         @apply -ml-px bg-gray-100 border border-gray-300 cursor-default font-medium
-                        inline-flex items-center leading-5 px-2 py-2 relative rounded-r-md text-gray-500 text-sm;
+                            inline-flex items-center leading-5 px-2 py-2 relative rounded-r-md text-gray-500 text-sm;
 
                         svg {
                             @apply h-5 w-5;
