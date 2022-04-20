@@ -10,10 +10,6 @@ body {
     @apply bg-gray-50;
 
     main {
-        @apply container flex flex-col items-center justify-center my-20 mx-auto;
-
-        .store-card-container {
-            @apply flex flex-wrap items-center justify-center my-12;
-        }
+        @apply container flex flex-col items-center justify-center my-10 mx-auto;
     }
 }
