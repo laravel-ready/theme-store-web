@@ -1,4 +1,4 @@
-@import "./../../components/category/category-cards.scss";
+@import "../../components/theme/preview-hero.scss";
 
 @import "./../../components/theme/theme-card.scss";
 
@@ -12,17 +12,5 @@ section {
     .store-card-container {
         @apply flex flex-wrap items-center justify-center
             my-12 mx-auto w-10/12;
-    }
-}
-
-.category-collection {
-    @apply flex flex-wrap items-center justify-center my-12;
-
-    .card-item {
-        width: 300px;
-
-        @apply m-5;
-
-        @extend .card-item-default;
     }
 }

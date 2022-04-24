@@ -144,7 +144,7 @@
 
                 .preview-link-button {
                     @apply flex border px-3 my-auto py-2 text-xs
-                        border-amber-500 hover:bg-amber-500
+                        hover:bg-amber-500
                         transition-all duration-200;
 
                     @extend .rounded-xss;
