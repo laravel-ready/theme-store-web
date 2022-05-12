@@ -16,3 +16,6 @@ mix
   });
 
 mix.copyDirectory("./images", `${publicWebAssetsFolder}/images`);
+
+// vue apps
+mix.js("apps/app.js", "public/js").vue();

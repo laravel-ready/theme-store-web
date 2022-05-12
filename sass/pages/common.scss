@@ -19,4 +19,8 @@ body {
     .page-content {
         margin-top: 72px;
     }
+
+    .container-fulid {
+        @apply flex flex-wrap items-center justify-center;
+    }
 }
