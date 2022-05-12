@@ -4,6 +4,9 @@
 
 @import "./../../components/category/category-cards.scss";
 
+@import "./../../components/author/meet-the-team.scss";
+@import "./../../components/author/author-card.scss";
+
 .store-card-container {
     @apply flex flex-wrap items-center justify-center my-12 mx-10;
 }

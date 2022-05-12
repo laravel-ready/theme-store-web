@@ -1,0 +1,32 @@
+@import "../../components/author/author-card.scss";
+
+// Meet the Team Component
+// Source: https://tailwindcomponents.com/component/meet-the-team-section
+
+.meet-the-team-container {
+    @apply flex flex-col mt-10 px-20 py-20 bg-white;
+
+    .meet-the-team {
+        @apply container max-w-7xl px-4;
+
+        .section-header {
+            @apply flex flex-wrap justify-center mb-24 text-center;
+
+            .header {
+                @apply text-gray-900 text-4xl font-bold mb-8;
+            }
+
+            p {
+                @apply font-light text-gray-700 text-lg;
+            }
+        }
+
+        .team-members {
+            @apply flex flex-wrap justify-center mt-10;
+
+            &.with-title-bar {
+                @apply mt-28;
+            }
+        }
+    }
+}

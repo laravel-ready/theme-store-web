@@ -1,0 +1,59 @@
+.author-card {
+    @apply lg:px-4 lg:w-3/12 mb-6 md:w-6/12
+        px-6 my-10 sm:px-6 w-full
+        hover:-translate-y-1 duration-200;
+
+    .body {
+        @apply flex flex-col;
+
+        .avatar {
+            @apply mx-auto;
+
+            img {
+                @apply delay-100 drop-shadow-md
+                    duration-200 hover:drop-shadow-xl
+                    rounded-2xl transition-all
+                    object-cover object-center
+                    h-80;
+            }
+        }
+
+        .details {
+            @apply mt-6 text-center;
+
+            .title {
+                @apply font-light mb-2 text-gray-700;
+            }
+
+            .social-icons {
+                @apply duration-300 flex hover:opacity-100
+                    items-center justify-center opacity-50
+                    transition-opacity;
+
+                .linkedin {
+                    @apply flex h-10 hover:bg-indigo-50 rounded-full w-10;
+
+                    i {
+                        @apply mt-2 mx-auto text-indigo-500;
+                    }
+                }
+
+                .twitter {
+                    @apply flex h-10 hover:bg-blue-50 rounded-full w-10;
+
+                    i {
+                        @apply mt-2 mx-auto text-blue-300;
+                    }
+                }
+
+                .instagram {
+                    @apply flex h-10 hover:bg-orange-50 rounded-full w-10;
+
+                    i {
+                        @apply mt-2 mx-auto text-orange-400;
+                    }
+                }
+            }
+        }
+    }
+}
