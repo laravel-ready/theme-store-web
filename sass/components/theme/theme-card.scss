@@ -21,6 +21,32 @@
             }
         }
 
+        .header-bar {
+            @apply flex flex-row absolute justify-end items-center
+                px-3 h-12 w-full;
+
+            .header-label {
+                @apply duration-300 font-bold
+                        inline-block md:mr-2 md:px-4 mr-1
+                        px-2 py-1 rounded-md
+                        text-white text-xs cursor-pointer;
+            }
+
+            .premium {
+                @apply bg-gradient-to-br from-yellow-400 to-yellow-600
+                    hover:from-yellow-400 hover:to-yellow-600;
+
+                @extend .header-label;
+            }
+
+            .free {
+                @apply bg-gradient-to-br from-blue-300 to-blue-600
+                    hover:from-blue-300 hover:to-blue-600;
+
+                @extend .header-label;
+            }
+        }
+
         .hover-bar {
             @apply flex flex-row absolute justify-end
                 h-16 w-full bottom-0 px-3 space-x-2 bg-none opacity-0
