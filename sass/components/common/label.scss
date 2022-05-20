@@ -1,0 +1,52 @@
+// Label Component
+// Source: https://tailwindcomponents.com/component/labelbadges
+
+.base-label {
+    @apply bg-gradient-to-br duration-300 font-bold
+            hover:opacity-100 mt-1
+            inline-block md:ml-3 md:px-4 ml-2
+            opacity-90 px-2 py-1 rounded-md
+            text-white text-xs;
+}
+
+.black-label {
+    @apply from-gray-400 hover:from-gray-400 hover:to-black to-black;
+
+    @extend .base-label;
+}
+
+.red-label {
+    @apply from-red-300 hover:from-red-300 hover:to-red-900 to-red-900;
+
+    @extend .base-label;
+}
+
+.blue-label {
+    @apply from-blue-300 hover:from-blue-300 hover:to-blue-600 to-blue-600;
+
+    @extend .base-label;
+}
+
+.orange-label {
+    @apply from-orange-400 hover:from-orange-400 hover:to-orange-600 to-orange-600;
+
+    @extend .base-label;
+}
+
+.green-label {
+    @apply from-green-300 hover:from-green-300 hover:to-green-600 to-green-600;
+
+    @extend .base-label;
+}
+
+.purple-label {
+    @apply from-purple-300 hover:from-purple-300 hover:to-purple-600 to-purple-600;
+
+    @extend .base-label;
+}
+
+.pink-label {
+    @apply from-pink-300 hover:from-pink-300 hover:to-pink-600 to-pink-600;
+
+    @extend .base-label;
+}
