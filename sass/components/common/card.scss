@@ -7,4 +7,8 @@ section {
     &.place-to-top {
         @apply -mt-36;
     }
+
+    &.container {
+        width: 80%;
+    }
 }
