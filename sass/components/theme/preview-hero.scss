@@ -43,6 +43,12 @@
                     }
                 }
             }
+
+            .statistic {
+                @apply text-gray-400 mt-4 pl-1;
+
+                @extend .text-xxs;
+            }
         }
     }
 

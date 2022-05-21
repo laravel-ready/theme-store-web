@@ -4,7 +4,12 @@
 // Source: https://tailwindcomponents.com/component/meet-the-team-section
 
 .meet-the-team-container {
-    @apply flex flex-col mt-10 px-20 py-20 bg-white items-center justify-center;
+    @apply flex flex-col mt-10 px-20 py-20
+        bg-white items-center justify-center;
+
+    &.fluid {
+        @apply my-5 py-5 px-10;
+    }
 
     .meet-the-team {
         @apply container max-w-7xl px-4;

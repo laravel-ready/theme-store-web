@@ -11,4 +11,12 @@ section {
     &.container {
         width: 80%;
     }
+
+    .tab-body {
+        @apply flex flex-wrap my-10;
+
+        &.center-items {
+            @apply items-center justify-center;
+        }
+    }
 }
