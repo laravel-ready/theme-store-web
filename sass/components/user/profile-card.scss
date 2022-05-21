@@ -1,0 +1,115 @@
+.user-profile-card {
+    @apply bg-white border border-gray-200/80
+        flex flex-row p-6 rounded-lg;
+
+    .avatar-container {
+        @apply relative flex-grow;
+
+        img {
+            @apply w-40 h-40 rounded-md object-cover
+                hover:shadow-lg transition-shadow duration-200 ease-in-out;
+
+            min-width: 160px;
+        }
+
+        .online-status-dot {
+            @apply -right-3 absolute bg-green-400
+                border-4 border-white bottom-5 h-5 md:visible
+                rounded-full sm:invisible w-5;
+        }
+    }
+
+    .meta-body {
+        @apply flex flex-col px-6;
+
+        .username-container {
+            @apply flex flex-row h-8;
+
+            .username {
+                @apply font-semibold text-lg;
+            }
+
+            .user-verified {
+                @apply fill-blue-400 h-5 ml-2 my-auto;
+            }
+        }
+
+        .meta-badges {
+            @apply flex flex-row my-2 space-x-2;
+
+            .badge {
+                @apply flex flex-row;
+
+                svg {
+                    @apply fill-gray-500/80 h-4 mr-2 w-4;
+                }
+
+                .text {
+                    @apply hover:text-gray-400 text-gray-400/80 text-xs;
+                }
+            }
+        }
+
+        .mini-cards {
+            @apply flex flex-row items-center mt-2 space-x-5;
+
+            .mini-card {
+                @apply border border-dashed border-gray-200
+                    duration-100 ease-in-out flex flex-col h-20
+                    hover:border-gray-400/80 items-center
+                    justify-center rounded-md transition-all w-40;
+
+                &:hover {
+                    .numbers,
+                    .text {
+                        @apply text-gray-700;
+                    }
+                }
+
+                &.active {
+                    @apply border-2 border-orange-400;
+                }
+
+                .numbers {
+                    @apply flex flex-row items-center justify-center;
+
+                    svg {
+                        @apply fill-gray-500/95 mr-3;
+                    }
+
+                    span {
+                        @apply font-bold text-gray-600;
+                    }
+                }
+
+                .text {
+                    @apply mt-2 text-gray-400 text-sm;
+                }
+            }
+        }
+    }
+
+    .right-actions-container {
+        @apply flex flex-col flex-grow items-end justify-start w-full;
+
+        .buttons-row {
+            @apply flex flex-row space-x-3;
+
+            .follow-button {
+                @apply bg-blue-500 duration-150 ease-in-out flex hover:bg-blue-600 px-4 py-2 rounded-md text-white transition-all;
+
+                svg {
+                    @apply fill-current mr-2;
+                }
+            }
+
+            .more-actions-button {
+                @apply bg-gray-100 duration-150 ease-in-out flex hover:bg-gray-200 px-1 py-2 rounded-md text-white transition-all;
+
+                svg {
+                    @apply fill-gray-500;
+                }
+            }
+        }
+    }
+}
